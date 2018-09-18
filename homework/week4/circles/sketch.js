@@ -25,3 +25,4 @@ function draw() {
   for (var i = 1; i < 6; i++) {
     ellipse (x*3, y, i*d, i*d);
   }
+}
