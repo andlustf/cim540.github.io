@@ -58,7 +58,7 @@ function draw() {
 }
 }
 */
-var x = 60;
+/* var x = 60;
 function setup () {
   createCanvas (120, 120);
 }
@@ -74,4 +74,47 @@ function draw () {
     }
   }
   rect (x, 60, 10, 10);
+}*/
+
+/* function setup () {
+  createCanvas (480, 480);
+  background (204);
+}
+
+function draw () {
+  // some creature
+  translate (30, 30);
+  rect (0, 0, 20, 20);
+  translate (30, 30);
+  rect (0, 0, 20, 20;
+  translate (30, 30);
+  rect (60, 40, 20, 20);
+  translate (mouseX, mouseY);
+  rect (0, 0, 40, 40);
+}
+
+function setup () {
+  createCanvas (240, 240);
+  background (204);
+  angleMode (DEGREES);
+}
+
+function draw () {
+  rect (120, 0, 40, 40);
+  rotate (45);
+  rect (120, 0, 40, 40);
+}*/
+
+function setup () {
+  createCanvas (240, 240);
+  background (204);
+  angleMode (DEGREES);
+}
+
+function draw () {
+  line (100, 60, 150, 60)
+  translate (mouseX, mouseY)
+  rotate (angle);
+  line (-10, -10, 40, 40);
+  angle += 10;
 }
