@@ -14,6 +14,7 @@ function draw() {
      y += speed;
     if (y > height) {
         y = 0;
+        x = random (0, width);
       }
     stroke(255);
       line(x, y, x, y+20);
@@ -25,8 +26,8 @@ function draw() {
       if (y > height) {
           y = 20;
 }*/
-fill(255, 255, 0);
-noStroke()
-ellipse(width/2, y, 60, 60);
-}
+  fill(255, 255, 0);
+  noStroke()
+  ellipse(width/2, y, 45, 45);
+  }
 }
