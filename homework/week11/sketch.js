@@ -37,11 +37,11 @@ function preload() {
 function setup(){
   createCanvas(828, 549);
   background (204);
-  M1 = new Moai(50, 200, 150);
-  M2 = new Moai(275, 200, 125);
-  M3 = new Moai(450, 200, 100);
-  M4 = new Moai(600, 200, 75);
-  M5 = new Moai(700, 200, 50);
+  M1 = new Moai(50, 250, 145);
+  M2 = new Moai(275, 250, 120);
+  M3 = new Moai(450, 250, 95);
+  M4 = new Moai(600, 250, 70);
+  M5 = new Moai(715, 250, 50);
 }
 
 function draw(){
