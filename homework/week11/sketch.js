@@ -11,13 +11,15 @@ function Moai(initX, initY, size){
   this.size = size;
   this.buildmoai = function(){
     fill(179, 179, 179);
+    noStroke ();
     rect(this.x, this.y, this.size, this.size*2);
     fill(89, 89, 89);
-    ellipse(this.x+this.size*.3, this.y+this.size*.8, this.size*.35, this.size*1.4);
-    ellipse(this.x+this.size*.7, this.y+this.size*.4, this.size/4, this.size/4);
-    triangle (this.x+this.size, this.y+this.size*4, this.x+this.size, this.y+this.x/2, this.x+this.size*1.2, this.y*1.6);
+    ellipse(this.x + this.size/4, this.y+ this.size, this.size/3, this.size*1.5);
+    ellipse(this.x + this.size/1.5, this.y+this.size/3, this.size/4, this.size/4);
+    triangle (this.x + this.size, this.y + this.size/3, this.x + this.size, this.y+this.size, this.x+this.size*1.2, this.y+this.size);
     //triangle(this.x+this.size, this.y+this.x, this.x+this.size, this.y+this.x*3, this.x+this.size*1.2, this.y+this.x*3);
-    line (this.x-this.size*.2, this.y*4, this.x*2, this.y+4);
+    stroke (0);
+    line (this.x+this.size/2, this.y+this.size*1.5, this.x+this.size, this.y+this.size*1.5);
   }
 }
 
@@ -35,7 +37,6 @@ function preload() {
 function setup(){
   createCanvas(828, 549);
   background (204);
-  noStroke ();
   M1 = new Moai(50, 275, 125);
   M2 = new Moai(200, 275, 100);
   M3 = new Moai(325, 275, 75);
